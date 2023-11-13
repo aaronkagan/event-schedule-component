@@ -210,6 +210,29 @@ a {
               hsl(222deg 18% 29%)
             );
 
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: -100%;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(
+                90deg,
+                transparent,
+                #fff,
+                transparent
+              );
+              transition: 0.5s;
+            }
+
+            &:hover::before {
+              left: 100%;
+            }
+
             &.deactivated-link {
               background: hsl(218deg 4% 85%);
               color: #848a96;
@@ -219,6 +242,10 @@ a {
                   fill: #848a96;
                   stroke: #848a96;
                 }
+              }
+
+              &::before {
+                content: unset;
               }
             }
 
