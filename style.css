@@ -17,20 +17,24 @@ body {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
 .card {
   width: 350px;
-  min-height: 80vh;
-  background-color: #fff;
+  background-color: hsl(0, 0%, 100%);
 }
 .card .header {
   background-color: hsl(202, 26%, 30%);
   min-height: 20.8rem;
   width: 100%;
-  color: hsl(0, 0%, 100%);
-}
-.card .header .wrapper {
-  width: 85%;
-  margin: 0 auto;
+  color: hsl(0, 0%, 95%);
 }
 .card .header .top-row {
   display: flex;
@@ -99,4 +103,91 @@ body {
 }
 .card .header .bottom-row span:nth-child(2) {
   color: hsl(0, 0%, 70%);
+}
+.card .main .date-list {
+  list-style-type: none;
+  margin-top: 2rem;
+  border-left: 1px solid hsl(218, 4%, 85%);
+  padding-bottom: 5rem;
+}
+.card .main .date-list .date-item {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+}
+.card .main .date-list .date-item .top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.card .main .date-list .date-item .top-row .col-left h3 {
+  position: relative;
+}
+.card .main .date-list .date-item .top-row .col-left h3 .red-dot-container {
+  position: absolute;
+  background-color: white;
+  width: 2rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  left: -2.05rem;
+  top: -0.4rem;
+}
+.card .main .date-list .date-item .top-row .col-left h3 .red-dot {
+  background-color: red;
+  width: 40%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.card .main .date-list .date-item .top-row .buy-ticket-container {
+  width: 10rem;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  padding: 0.7rem;
+  background: linear-gradient(45deg, hsl(199, 26%, 32%), hsl(222, 18%, 29%));
+}
+.card .main .date-list .date-item .top-row .buy-ticket-container.deactivated-link {
+  background: hsl(218, 4%, 85%);
+  color: #848a96;
+}
+.card .main .date-list .date-item .top-row .buy-ticket-container.deactivated-link .ticket-icon path {
+  fill: #848a96;
+  stroke: #848a96;
+}
+.card .main .date-list .date-item .top-row .buy-ticket-container .ticket-icon {
+  rotate: -45deg;
+}
+.card .main .date-list .date-item .top-row .buy-ticket-container .ticket-icon path {
+  fill: #fff;
+  stroke: hsl(0, 0%, 50%);
+}
+.card .main .date-list .date-item .top-row .buy-ticket-container span {
+  font-size: 1rem;
+}
+.card .main .date-list .date-item .bottom-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.card .main .date-list .date-item .bottom-row .col-left,
+.card .main .date-list .date-item .bottom-row .col-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+.card .main .date-list .date-item .bottom-row .col-left .icon,
+.card .main .date-list .date-item .bottom-row .col-right .icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.card .main .date-list .date-item .bottom-row .col-left .icon path,
+.card .main .date-list .date-item .bottom-row .col-right .icon path {
+  fill: hsl(220, 10%, 46%);
+  stroke: #fff;
 }/*# sourceMappingURL=style.css.map */
