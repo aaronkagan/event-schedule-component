@@ -17,43 +17,44 @@ body {
   min-height: 100vh;
 }
 
-.main {
+.card {
   width: 350px;
-  height: 90vh;
+  min-height: 80vh;
+  background-color: #fff;
 }
-.main .header {
+.card .header {
   background-color: hsl(202, 26%, 30%);
   min-height: 20.8rem;
   width: 100%;
   color: hsl(0, 0%, 100%);
 }
-.main .header .wrapper {
+.card .header .wrapper {
   width: 85%;
   margin: 0 auto;
 }
-.main .header .top-row {
+.card .header .top-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 1.5rem;
 }
-.main .header .top-row .left-arrow,
-.main .header .top-row .bell {
+.card .header .top-row .left-arrow,
+.card .header .top-row .bell {
   width: 2.8rem;
   height: 2.8rem;
 }
-.main .header .top-row .left-arrow path,
-.main .header .top-row .bell path {
+.card .header .top-row .left-arrow path,
+.card .header .top-row .bell path {
   stroke: white;
   stroke-width: 1px;
 }
-.main .header .top-row .left-arrow {
+.card .header .top-row .left-arrow {
   rotate: -90deg;
 }
-.main .header .top-row .bell-container {
+.card .header .top-row .bell-container {
   position: relative;
 }
-.main .header .top-row .bell-container::after {
+.card .header .top-row .bell-container::after {
   content: "";
   width: 8px;
   aspect-ratio: 1;
@@ -63,39 +64,39 @@ body {
   left: 17px;
   top: 2.5px;
 }
-.main .header .middle-row {
+.card .header .middle-row {
   display: flex;
   gap: 2rem;
   margin-top: 2.5rem;
   align-items: center;
   margin-bottom: 2.7rem;
 }
-.main .header .middle-row .avatar {
+.card .header .middle-row .avatar {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main .header .middle-row .text-container {
-  font-size: 120%;
+.card .header .middle-row .text-container {
+  font-size: 180%;
 }
-.main .header .middle-row .text-container .title {
-  font-weight: 400;
+.card .header .middle-row .text-container .title {
+  font-weight: 500;
 }
-.main .header .middle-row .text-container .sub-heading {
+.card .header .middle-row .text-container .sub-heading {
   color: hsl(0, 0%, 90%);
-  line-height: 2;
+  line-height: 1.5;
 }
-.main .header .bottom-row span {
+.card .header .bottom-row span {
   text-transform: uppercase;
   font-size: 1.5rem;
 }
-.main .header .bottom-row span:first-child {
+.card .header .bottom-row span:first-child {
   margin-right: 2rem;
   border-bottom: 2px solid hsl(339, 88%, 50%);
   padding-bottom: 1.1rem;
 }
-.main .header .bottom-row span:nth-child(2) {
+.card .header .bottom-row span:nth-child(2) {
   color: hsl(0, 0%, 70%);
 }/*# sourceMappingURL=style.css.map */

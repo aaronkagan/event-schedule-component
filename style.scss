@@ -17,9 +17,10 @@ body {
   min-height: 100vh;
 }
 
-.main {
+.card {
   width: 350px;
-  height: 90vh;
+  min-height: 80vh;
+  background-color: #fff;
 
   .header {
     background-color: hsl(202deg 26% 30%);
@@ -85,15 +86,15 @@ body {
       }
 
       .text-container {
-        font-size: 120%;
+        font-size: 180%;
 
         .title {
-          font-weight: 400;
+          font-weight: 500;
         }
 
         .sub-heading {
           color: hsl(0, 0%, 90%);
-          line-height: 2;
+          line-height: 1.5;
         }
       }
     }
