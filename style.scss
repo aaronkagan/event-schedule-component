@@ -38,6 +38,29 @@ a {
     min-height: 20.8rem;
     width: 100%;
     color: hsl(0, 0%, 95%);
+    position: relative;
+    overflow: hidden;
+
+    .header-bg-1 {
+      width: 1000px;
+      position: absolute;
+      transform: rotateY(180deg);
+      right: 0;
+      top: -1.4rem;
+      path {
+        fill-opacity: 0.05;
+      }
+    }
+
+    .header-bg-2 {
+      width: 1000px;
+      position: absolute;
+      left: -160%;
+      top: 0;
+      path {
+        fill-opacity: 0.05;
+      }
+    }
 
     .top-row {
       display: flex;
